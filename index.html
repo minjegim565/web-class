@@ -1,1 +1,189 @@
-sdfsdfsdf
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>그리디 국밥</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff8f0;
+    color: #4a3b2c;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #c58a4b, #8b5e34);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ✅ h2 크기 */
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-family: 'Noto Serif KR', serif;
+}
+
+/* ✅ menu 강조색 */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    background: #fff3e0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-family: 'Noto Serif KR', serif;
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #8b5e34;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #7E9A9D;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: #7E9A9D;
+    transform: scale(1.05);
+}
+
+.message {
+    background: #f3e3d3;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+footer {
+    background: #5a3d2b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+/* ✅ 680px 기준 반응형 */
+@media (max-width: 680px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍲 맛있는 국밥</h1>
+    <p>따뜻한 한 그릇으로 하루를 채우는 곳</p>
+</header>
+
+<section>
+    <h2>대표 메뉴</h2>
+
+    <div class="menu">
+        <div class="card">
+            <h3>🥘 순대국밥</h3>
+            <p>진한 육수에 푸짐한 순대와 고기를 담은 깊은 맛</p>
+            <div class="price">₩9,000</div>
+            <a href="#" class="button">주문하기</a>
+        </div>
+
+        <div class="card">
+            <h3>🍖 뼈해장국</h3>
+            <p>얼큰하고 진한 국물, 부드러운 고기가 일품</p>
+            <div class="price">₩10,000</div>
+            <a href="#" class="button">주문하기</a>
+        </div>
+
+        <div class="card" style="background:#6491D5; color:white;">
+            <h3>🌱 콩나물국밥</h3>
+            <p>시원하고 깔끔한 국물로 속을 편안하게</p>
+            <div class="price" style="color:red;">₩8,000</div>
+            <a href="#" class="button">주문하기</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>사장님 한마디</h2>
+    <div class="message">
+        "매일 아침 정성껏 끓인 국밥으로<br>
+        집밥 같은 따뜻함을 전해드리겠습니다."<br><br>
+        🍚 늘 정직한 맛으로 기다리겠습니다.
+    </div>
+</section>
+
+<footer>
+    <p>📍 주소: 대구광역시 동구 동부로 121</p>
+    <p>⏰ 영업시간: 매일 08:00 - 22:00</p>
+    <p>📞 전화번호: 010-1234-5678</p>
+    <p> 만든사람: bion.T</p>
+</footer>
+
+</body>
+</html>
